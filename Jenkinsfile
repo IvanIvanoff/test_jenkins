@@ -1,8 +1,8 @@
 node {
     def DOCKER_HOST
-    stage('Preparation') { // for display purposes
+    stage('Preparation') { 
         // Get some code from a GitHub repository
-        git 'https://github.com/jglick/simple-maven-project-with-tests.git'
+        git 'https://github.com/ivanivanoff/test_jenkinstests.git'
       
         // Prepare the env vars
         DOCKER_HOST = 'docker-host'
