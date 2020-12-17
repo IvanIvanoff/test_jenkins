@@ -6,7 +6,7 @@ node {
       
         // Prepare the env vars
         // default value is tcp://docker:2376
-        // DOCKER_HOST = 'docker-host'
+        DOCKER_HOST = 'tcp://docker:2376'
     }
     stage('Build') {
         withEnv(["DOCKER_HOST=$DOCKER_HOST"]) {
