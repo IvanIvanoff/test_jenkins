@@ -5,7 +5,8 @@ node {
         git 'https://github.com/ivanivanoff/test_jenkins.git'
       
         // Prepare the env vars
-        DOCKER_HOST = 'docker-host'
+        // default value is tcp://docker:2376
+        // DOCKER_HOST = 'docker-host'
     }
     stage('Build') {
         withEnv(["DOCKER_HOST=$DOCKER_HOST"]) {
