@@ -2,7 +2,7 @@ node {
     def DOCKER_HOST
     stage('Preparation') { 
         // Get some code from a GitHub repository
-        git 'https://github.com/ivanivanoff/test_jenkinstests.git'
+        git 'https://github.com/ivanivanoff/test_jenkins.git'
       
         // Prepare the env vars
         DOCKER_HOST = 'docker-host'
